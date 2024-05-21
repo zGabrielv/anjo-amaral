@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+@font-face {
+    font-family: 'Britany';
+    src: url('../assets/fonts/BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gaeilge';
+    src: url('../assets/fonts/Gaeilge.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MonCheri';
+    src: url('../assets/fonts/TAN-MONCHERI.ttf') format('truetype'),
+    url('../assets/fonts/TAN-MON\ CHERI.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: $bege-fundo;
+    color: $preto-claro;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+svg{
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}

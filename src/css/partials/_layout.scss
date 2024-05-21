@@ -1,0 +1,136 @@
+#bg-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/bg-anjohamaral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 12px 8px;
+}
+
+
+
+main {
+    margin-top: 86px;
+    flex: 20 1 700px;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 1px;
+    display: flex;
+}
+
+footer {
+    flex: 1 1 100vw;
+
+}
+
+.hero,
+.sessao {
+    width: 100vw;
+    margin: 12px;
+    border: solid 1px $bege-borda;
+    border-radius: 12px;
+    
+    
+}
+.hero{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.cta {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 61vh;
+    // height: calc(61vh - 150px);
+    font-weight: normal;
+    h1 {
+        font-family: 'MonCheri', serif;
+        line-height: 115%;
+        max-width: 940px;
+        font-size: clamp(48px, 4vw, 72px);
+        text-align: center;
+
+    }
+
+    p {
+        font-family: 'Kurale', serif;
+        text-align: center;
+        font-size: clamp(22px, 3vw, 24px);
+        text-wrap: wrap;
+    }
+}
+.destino{
+    color: rgb(241, 171, 31);
+}
+
+
+.cta-btton {
+    border: 1px solid $bege-borda;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.8s;
+
+    font-family: 'MonCheri', serif;
+    
+    font-size: clamp(22px, 3vw, 24px);
+    font-weight: 600;
+    margin: 28px 0;
+    max-width: 100%;
+}
+
+.cta-btton:hover {
+    background-color: $preto-claro;
+    color: $bege-fundo;
+
+}
+
+
+.tarot-title{
+    font-size: clamp(20px, 3vw, 28px);
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'MonCheri', sans-serif;
+    border-bottom: 1px solid $bege-borda;
+}
+.tarot-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    img{
+        max-width: 575px;
+    }
+    p {
+        font-family: 'Kurale', serif;
+        text-align: center;
+        font-size: clamp(22px, 3vw, 24px);
+        text-align: justify;
+        columns: clamp(450px, 680px,750px) 1;
+        margin: 40px;
+    }
+}
