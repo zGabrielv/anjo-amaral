@@ -39,7 +39,15 @@ nav {
         max-width: 245px;
     }
 }
-
+footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    img{
+        width: 150px;
+    }
+}
 nav,
 footer {
     border-radius: 12px;
@@ -71,6 +79,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin-inline: 10px;
+    z-index: 4;
+    
 }
 
 
@@ -114,7 +124,7 @@ footer {
 @media screen and (max-width: 750px) {
     .hamburger {
         display: block;
-        z-index: 1;
+        z-index: 4;
         margin-inline-end: 2.6%;
     }
 
@@ -126,6 +136,7 @@ footer {
     width: 95.8vw;
     max-width: 100%;
     position: fixed;
+    
     justify-content: space-between;
     background-color: $preto-claro;
 
@@ -203,5 +214,17 @@ footer {
 
     }
 
+}
 
+@media screen and (max-width: 600px) {
+
+    .nav{
+        width: 94.9vw;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .nav{
+        width: 94.5vw;
+    }
 }
