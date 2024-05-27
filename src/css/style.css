@@ -285,22 +285,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .tarot-content img {
-  max-width: 575px;
+  max-width: 780px;
 }
 .tarot-content p {
-  -moz-columns: 680px 1;
-       columns: 680px 1;
+  -moz-columns: 580px 1;
+       columns: 580px 1;
   margin: 40px;
-}
-
-.cartas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .benefit-title {
@@ -313,22 +305,28 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-}
-.benefit h2 {
-  width: 100vw;
+  padding: 24px;
 }
 .benefit p {
   text-align: left;
-}
-.benefit .benefit-list {
-  display: flex;
-  max-width: 80%;
 }
 .benefit img {
   max-width: 350px;
   border-radius: 20rem 20rem 0 0;
 }
 
+.benefit-list {
+  max-width: 55%;
+}
+
+@media screen and (max-width: 730px) {
+  .tarot-content {
+    flex-wrap: wrap;
+  }
+  .benefit-list {
+    max-width: 100%;
+  }
+}
 @font-face {
   font-family: "Britany";
   src: url("../assets/fonts/BrittanySignature.ttf") format("truetype");

@@ -117,25 +117,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    
+    
 
     img {
-        max-width: 575px;
+        max-width: 780px;
+
     }
 
     p {
-        columns: clamp(450px, 680px, 750px) 1;
+        columns: clamp(450px, 580px, 780px) 1;
         margin: 40px;
+    
     }
 }
 
-.cartas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 .benefit-title {
@@ -148,22 +145,31 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    h2 {
-        width: 100vw;
-    }
+    
+padding: 24px;
 
     p {
         text-align: left;
     }
 
-    .benefit-list {
-        display: flex;
-        max-width: 80%;
-
-    }
 
     img {
         max-width: 350px;
         border-radius: 20rem 20rem 0 0;
+    }
+}
+
+.benefit-list {
+    max-width: 55%;
+
+}
+
+@media screen and (max-width: 730px) {
+    .tarot-content{
+        flex-wrap: wrap;
+    }
+    .benefit-list {
+        max-width: 100%;
+    
     }
 }
