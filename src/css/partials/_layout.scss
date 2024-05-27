@@ -13,7 +13,7 @@
 
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 12px 8px;
@@ -41,10 +41,11 @@ footer {
     margin: 12px;
     border: solid 1px $bege-borda;
     border-radius: 12px;
-    
-    
+
+
 }
-.hero{
+
+.hero {
     overflow: hidden;
     height: 100vh;
 }
@@ -61,6 +62,7 @@ footer {
     height: 61vh;
     // height: calc(61vh - 150px);
     font-weight: normal;
+
     h1 {
         font-family: 'MonCheri', serif;
         line-height: 115%;
@@ -70,14 +72,9 @@ footer {
 
     }
 
-    p {
-        font-family: 'Kurale', serif;
-        text-align: center;
-        font-size: clamp(22px, 3vw, 24px);
-        text-wrap: wrap;
-    }
 }
-.destino{
+
+.destino {
     color: rgb(241, 171, 31);
 }
 
@@ -90,7 +87,7 @@ footer {
     transition: background-color 0.8s;
 
     font-family: 'MonCheri', serif;
-    
+
     font-size: clamp(22px, 3vw, 24px);
     font-weight: 600;
     margin: 28px 0;
@@ -104,7 +101,7 @@ footer {
 }
 
 
-.tarot-title{
+.tarot-title {
     font-size: clamp(20px, 3vw, 28px);
     display: flex;
     justify-content: center;
@@ -115,22 +112,58 @@ footer {
     font-family: 'MonCheri', sans-serif;
     border-bottom: 1px solid $bege-borda;
 }
-.tarot-content{
+
+.tarot-content {
     display: flex;
     align-items: center;
-    justify-content:space-between ;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    img{
+
+
+    img {
         max-width: 575px;
     }
-    p {
-        font-family: 'Kurale', serif;
-        text-align: center;
-        font-size: clamp(22px, 3vw, 24px);
 
-        columns: clamp(450px, 680px,750px) 1;
+    p {
+        columns: clamp(450px, 680px, 750px) 1;
         margin: 40px;
+    }
+}
+
+.cartas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.benefit-title {
+    font-weight: bold;
+}
+
+.benefit {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    h2 {
+        width: 100vw;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .benefit-list {
+        display: flex;
+        max-width: 80%;
+
+    }
+
+    img {
+        max-width: 350px;
+        border-radius: 20rem 20rem 0 0;
     }
 }
