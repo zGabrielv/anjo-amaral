@@ -9,6 +9,10 @@
 
     <script defer src="./src/js/app.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
     <!-- META TAG OG-->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Anjoh Amaral" />
@@ -54,28 +58,33 @@
         <section class="hero">
             <div id="bg-image">
                 <div class="cta">
-                    <h1>CONHEÇA<br>SEU<br><span class="destino">DESTINO</span></h1>
-                    <div>
-                        <p>O Tarot orfere um caminho para o autoconhecimento <br>e a compreensão das suas emoções e
+                    
+                    <h1 data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-duration="850">
+                        CONHEÇA<br>SEU<br><span class="destino">DESTINO</span></h1>
+                    <div data-aos="fade-up" data-aos-delay="1000">
+                        <p>O Tarot oferece um caminho para o autoconhecimento <br>e a compreensão das suas emoções e
                             pensamentos...
                         </p>
                     </div>
-                    <a class="cta-btton" target="_blank" href="#">Convoque sua Previsão</a>
+                    <a class="cta-btton" target="_blank"  data-aos="fade-up" data-aos-delay="1000"
+                    href="https://wa.me/5511961705662?text=Oi%20Anjoh!%0AGostaria%20de%20maiores%20informa%C3%A7%C3%B5es%20sobre%20suas%20tiragens!" target="_blank">Convoque sua Previsão</a>
 
                 </div>
             </div>
         </section>
-        <section class="sessao" id="tarot">
+        <section class="sessao" id="tarot" data-aos="fade-up">
 
             <div class="tarot-title">
                 <h2>
                     O TAROT
                 </h2>
             </div>
-            <div class="tarot-content container">
-                <div><img src="./src/assets/images/cartas.svg" alt="cartas">
+            <div class="tarot-content container" >
+                <div data-aos="fade-right" ><img src="./src/assets/images/cartas.svg" alt="cartas">
                 </div>
-                <div class="benefit-list">
+                <div class="benefit-list" data-aos="fade-left" data-aos-delay="150">
                     <p>O Tarot é um sistema fascinante de 78 cartas que captura a jornada humana em todas as suas formas
                         e possibilidades. Cada carta é um símbolo rico em significado, representando uma experiência ou
                         um aspecto da vida. As 22 cartas dos Arcanos Maiores refletem os grandes mistérios e lições de
@@ -97,14 +106,14 @@
                 </div>
             </div>
         </section>
-        <section class="sessao">
+        <section class="sessao" data-aos="fade-up">
             <div class="tarot-title">
                 <h2>
                     BENEFÍCIOS DO TAROT
                 </h2>
             </div>
             <div class="benefit">
-                <div class="benefit-list">
+                <div class="benefit-list"data-aos="fade-right" data-aos-delay="150">
                     <ul>
                         <li>
                             <p><span class="benefit-title">Autoconhecimento:</span> O tarot ajuda as pessoas a
@@ -155,11 +164,11 @@
                         </li>
                     </ul>
                 </div>
-                <div><img src="./src/assets/images/fundocartas.jpeg" alt="cartas"></div>
+                <div  data-aos="fade-left" data-aos-delay="300"><img src="./src/assets/images/fundocartas.jpeg" alt="cartas"></div>
             </div>
 
         </section>
-        <section class="sessao" id="tiragens">
+        <section class="sessao" id="tiragens"data-aos="fade-up">
             <div class="tarot-title">
                 <h2>
                     NOSSAS TIRAGENS
@@ -182,15 +191,16 @@
                             refletir sobre as revelações no seu próprio tempo. Sem limites de perguntas, mergulhe em uma
                             experiência de Tarot que é tão única quanto você.
                         </p>
-                        <button>
-                            Ao vivo - R$100
-                        </button>
-                        <button>
-                            Gravada - R$70
+                        <button class="cta-btton">
+                            <a href="https://wa.me/5511961705662?text=Oi%20Anojh!%0AGostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20a%20Tiragem%20Completa%20-%20Ao%20Vivo." target="_blank">   Ao vivo - R$100</a>
+                        </button >
+                        <button class="cta-btton">
+                            <a href="https://wa.me/5511961705662?text=Oi%20Anojh!%0AGostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20a%20Tiragem%20Completa%20-%20Gravada." target="_blank">
+                            Gravada - R$70</a>
                         </button>
                     </div>
                 </div>
-                <div class="tiragem" data-aos="fade-up" data-aos-delay="500">
+                <div class="tiragem" data-aos="fade-up" data-aos-delay="300">
                     <img src="./src/assets/images/Templo de Afrodite.png" alt="TEMPLO DE AFRODITE" />
                     <div class="tiragem-info">
                         <h2><strong>
@@ -201,36 +211,38 @@
                             explore as dinâmicas do amor e fortaleça laços, seja com um parceiro ou um amigo.
 
                         </p>
-                        <button>
-                            R$ 120
+                        <button class="cta-btton">
+                            <a href="https://wa.me/5511961705662?text=Oi%20Anojh!%0AGostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Templo%20de%20Afrodite." target="_blank">
+                            R$ 120</a>
                         </button>
                     </div>
                 </div>
-                <div class="tiragem" data-aos="fade-up" data-aos-delay="500">
+                <div class="tiragem" data-aos="fade-up" data-aos-delay="450">
                     <img src="./src/assets/images/Ciclo de aniversário.png" alt="CICLO DE ANIVERSÁRIO" />
                     <div class="tiragem-info">
                         <h2><strong>
                                 CICLO DE ANIVERSÁRIO
                             </strong></h2>
                         <p>
-                            Revelações para o Seu Ano, Ao Vivo ou Gravada Celebre o seu novo ciclo de vida com o nosso
+                            Revelações para o Seu Ano, Ao Vivo ou Gravada. Celebre o seu novo ciclo de vida com o nosso
                             Ciclo de Aniversário. Independentemente de você preferir a emoção de uma leitura ao vivo ou
                             a reflexão que uma gravação proporciona, nossa tiragem especial de aniversário é uma
                             ferramenta poderosa para iluminar o ano que está por vir. Descubra o que o futuro reserva em
                             todas as áreas da sua vida, desde projetos pessoais até desafios iminentes, com a
                             flexibilidade de escolher o formato que melhor se encaixa no seu ritmo.
                         </p>
-                        <button>
-                            R$ 150
+                        <button class="cta-btton">
+                            <a href="https://wa.me/5511961705662?text=Oi%20Anojh!%0AGostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Ciclo%20de%20Anivers%C3%A1rio" target="_blank">
+                            R$ 150</a>
                         </button>
                     </div>
                 </div>
 
-                <div class="tiragem" data-aos="fade-up" data-aos-delay="300">
+                <div class="tiragem" data-aos="fade-up" data-aos-delay="600">
                     <img src="./src/assets/images/Tiragem Semana.png" alt="TIRAGEM SEMANA" />
                     <div class="tiragem-info">
                         <h2><strong>
-                                TIRAGEM SEMANA
+                                TIRAGEM DA SEMANA
                             </strong></h2>
                         <p>
                             Prepare-se para os mistérios de cada semana com a nossa Tiragem Semanal Personalizada.
@@ -240,8 +252,9 @@
                             são projetadas para oferecer uma visão semanal exclusiva, guiando-o através dos dias com
                             sabedoria e confiança.
                         </p>
-                        <button>
-                            R$ 55
+                        <button class="cta-btton">
+                            <a href="https://wa.me/5511961705662?text=Oi%20Anojh!%0AGostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20a%20Tiragem%20da%20Semana" target="_blank">
+                            R$ 55</a>
                         </button>
                     </div>
                 </div>
@@ -275,14 +288,16 @@
 
         </section>
 
-        <section class="sessao" id="sobre">
+        <section class="sessao" id="sobre" data-aos="fade-up">
             <div class="tarot-title">
                 <h2>
                     SOBRE MIM
                 </h2>
             </div>
             <div class="about-content">
-                <div>
+                <div data-aos="fade-zoom-in"
+                data-aos-delay="150"
+                data-aos-duration="850">
                     <img src="./src/assets/images/anjo.webp" alt="IMAGEM ANJOH">
                 </div>
                 <div class="about-description">
@@ -316,7 +331,18 @@
     <footer>
         <img src="./src/assets/images/logovertical.png" alt="logo">
         <p>Copright &copy; 2024 | Anjo Amaral - Todos os direitos reservados.</p>
+        <!-- button Whatsapp-->
+    <a 
+    href="https://wa.me/5511961705662?text=Oi%20Anjoh!%0AGostaria%20de%20maiores%20informa%C3%A7%C3%B5es%20sobre%20suas%20tiragens!"
+    class="btn-whatsapp"
+    target="_blank"
+    data-aos="zoom-in-up" data-aos-delay="400"
+    >
+    <img src="./src/assets/images/whatssapp.svg" alt="Botao Whatsapp">
+    <span class="tooltip-text">Agende seu horário</span>
+    </a>
     </footer>
+    <script src="./src/js/script.js"></script>
     <script type="text/javascript">
 
         openMenu.addEventLisener('clck', () => {
