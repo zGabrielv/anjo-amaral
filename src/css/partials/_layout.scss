@@ -70,13 +70,14 @@ footer {
         max-width: 940px;
         font-size: clamp(48px, 4vw, 72px);
         text-align: center;
+        padding-top: 40px;
 
     }
 
 }
 
 .destino {
-    color: rgb(241, 171, 31);
+    color: $dourado;
 }
 
 
@@ -84,9 +85,9 @@ footer {
     border: 1px solid $bege-borda;
     padding: 8px 24px;
     border-radius: 4px;
-    background-color: transparent;
+    background-color: $bege-borda;
     transition: background-color 0.8s;
-
+    color: $preto-claro;
     font-family: 'MonCheri', serif;
 
     font-size: clamp(22px, 3vw, 24px);
@@ -98,7 +99,7 @@ footer {
 }
 
 .cta-btton:hover {
-    background-color: $preto-claro;
+    background-color: $dourado;
     color: $bege-fundo;
 
 }
@@ -113,6 +114,7 @@ footer {
     text-align: center;
     margin-top: 10px;
     font-family: 'MonCheri', sans-serif;
+    color: $dourado;
     border-bottom: 1px solid $bege-borda;
 }
 
@@ -221,6 +223,7 @@ footer {
     align-items: center;
     padding: 14px;
     background-color: $bege-borda;
+    color: $preto-claro;
     z-index: 3;
 
     h2 {
@@ -229,7 +232,7 @@ footer {
 }
 
 .tiragem-info button {
-    color: $preto-claro;
+    color: $branco-fundo;
     background-color: $bege-fundo;
     width: 310px;
     padding: 4px 8px;
